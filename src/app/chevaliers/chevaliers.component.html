@@ -1,0 +1,28 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h1>Chevaliers</h1>
+  </div>
+  <div class="panel-body">
+    <table class="table table-striped table-bordered">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Nom</th>
+          <th>Role</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let chevalier of chevaliers">
+          <td>{{chevalier.id}}</td>
+          <td>{{chevalier.prenom}}</td>
+          <td>{{chevalier.role}}</td>
+          <td>
+            <button (click)="supprChevalier(chevalier.id)">Supprimer</button>
+            &nbsp;
+            <button (click)="modifieChevalier(chevalier.id)">Modifier</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

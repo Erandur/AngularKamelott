@@ -1,0 +1,10 @@
+<div *ngIf="chevalier">
+  <div>
+    <label>Prénom : </label> {{chevalier.nom}}
+  </div>
+  <div>
+    <label>Rôle : </label> {{chevalier.role}}
+  </div>
+  <span class="button is-small btn danger" (click)='supprChevalier()'>Supprimer</span>
+  <hr/>
+</div>
